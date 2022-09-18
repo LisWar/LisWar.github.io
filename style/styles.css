@@ -1,0 +1,200 @@
+:root {
+    --main-black-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196F3;;
+    --text-lh: 1.71;
+    --main-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+    background-color: var(--accent-color);
+    color: var(--main-btn-color);
+}
+
+.section-title {
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+/* .portfolio-title {
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+} */
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+            /* HEADER */
+
+.header {
+    background-color: #2F303A;
+}
+
+/* Чи варто окремо прописувати порожній "header-logo" та інші порожні стилі? */
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-black-color);
+}
+
+.header-email .header-tel{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.header-link:hover, .header-email:hover, .header-tel:hover {
+     color: var(--accent-color);
+     cursor: pointer;
+ }
+
+        /* HERO */
+.hero {}
+
+.hero-btn {}
+
+.hero-title {}
+
+
+        /* ADVANTAGES */
+.advantages {}
+
+.advantages-title {}
+
+.advantages-list {}
+
+.advantages-item {}
+
+
+        /* DEMO */
+.demo {}
+
+.demo-title {}
+
+.demo-list {}
+
+.demo-item {}
+
+.demo-img {}
+
+
+        /* TEAM */
+
+.team {}
+
+.team-title {}
+
+.team-list {}
+
+.team-item {}
+
+.team-link {}
+
+.team-img {}
+
+.team-name {}
+
+.team-job {}
+
+
+        /* FILTERS */
+
+.filters {}
+
+.filters-title {}
+
+.filters-list {}
+
+.filters-item {}
+
+.filters-btn {}
+
+
+        /* EXAMPLES */
+
+.examples {}
+
+.examples-title {}
+
+.examples-list {}
+
+.examples-item {}
+
+.examples-link {}
+
+.examples-name {}
+
+.examples-type {}
+
+.examples-img {}
+
+
+        /* FOOTER */
+
+.footer {
+
+}
+
+.footer-logo {
+
+}
+
+.footer-address {
+
+}
+
+.footer-email {
+
+}
+
+.footer-tel {
+
+}

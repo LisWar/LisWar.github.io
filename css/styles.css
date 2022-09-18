@@ -1,0 +1,240 @@
+:root {
+    --main-black-color: #212121;
+    --main-white-color: #FFFFFF;
+    --text-color: #757575;
+    --accent-color: #2196F3;
+    --background-primary: #E5E5E5;
+    --background-secondary: #F5F4FA;
+    --background-black: #2F303A;
+    --text-lh: 1.71;
+    --main-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--text-color);
+    background-color: #FFFFFF;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--accent-color);
+    color: var(--main-white-color);
+} 
+
+.section-title {
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+/* .portfolio-title {
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+} */
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+            /* HEADER */
+
+/* Чи варто окремо прописувати порожній "header", "header-logo" та інші порожні стилі? */
+
+.header{
+    background-color: #FFFFFF;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-black-color);
+}
+
+.header-current{
+    color: var(--accent-color);
+}
+
+.header-email, .header-tel{
+    font: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.header-link:hover, .header-email:hover, .header-tel:hover {
+     color: var(--accent-color);
+     cursor: pointer;
+ }
+
+        /* HERO */
+.hero {
+    background-color: var(--background-black);
+}
+
+.hero-btn {
+    font-size: 16px;
+    line-height: 1.88;
+    background-color: var(--accent-color);
+    color: var(--main-white-color);
+    border: none;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--main-white-color);
+}
+
+        /* ADVANTAGES */
+
+.advantages-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--main-black-color);
+}
+
+.advantages-item {
+    font-size: 14px;
+    line-height: var(--text-lh);
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+        /* DEMO */
+
+.demo-title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--main-black-color);
+}
+
+/* .demo-img {} */
+
+
+        /* TEAM */
+.team {
+    background-color: var(--background-secondary);
+}
+.team-title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--main-black-color);
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-black-color);
+}
+
+.team-job {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+
+        /* FILTERS */
+
+.filters-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--main-black-color);
+    background-color: var(--background-secondary);
+    border: none;
+}
+
+.filters-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--main-white-color);
+    cursor: pointer;
+}
+
+
+        /* EXAMPLES */
+
+.examples-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--main-black-color);
+}
+
+.examples-type {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+        /* FOOTER */
+
+.footer {
+    background-color: var(--background-black);
+}
+
+.footer-address {
+    color: var(--main-white-color);
+}
+
+.footer-email {
+    color: var(--main-white-color);
+    opacity: 60%;
+}
+
+.footer-tel {
+    color: var(--main-white-color);
+    opacity: 60%;
+}
