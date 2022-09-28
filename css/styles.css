@@ -10,6 +10,29 @@
     --main-font: 'Roboto', sans-serif;
 }
 
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
 body {
     font-family: var(--main-font);
     color: var(--text-color);
@@ -74,12 +97,40 @@ body {
     cursor: pointer;
 }
 
+.container {
+    margin: 0 215px;
+}
+    
             /* HEADER */
 
-/* Чи варто окремо прописувати порожній "header", "header-logo" та інші порожні стилі? */
 
-.header{
+.header {
     background-color: #FFFFFF;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 97px;
+}
+
+.header-list {
+    display: flex;
+    gap: 30px; 
+}
+
+.header-contacts {
+    margin-left: auto;
 }
 
 .header-link {
@@ -90,7 +141,7 @@ body {
     color: var(--main-black-color);
 }
 
-.header-current{
+.header-current {
     color: var(--accent-color);
 }
 
@@ -103,22 +154,58 @@ body {
     color: var(--text-color);
 }
 
+.header-tel {
+    margin-left: 50px;
+}
+
 .header-link:hover, .header-email:hover, .header-tel:hover {
      color: var(--accent-color);
      cursor: pointer;
  }
+
 
         /* HERO */
 .hero {
     background-color: var(--background-black);
 }
 
+.hero-proper{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 200px 200px 0 200px;
+    margin: auto;
+    justify-content: center;
+    /* align-content: center; */
+}
+
+.hero-container {
+    display: flex;
+    padding: 0 200px;
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+}
+
+.hero-title {
+    background-color: var(--background-black);
+    /* justify-self: center; */
+    padding: 0 200px;
+    /* width: 700px; */
+    /* min-height: 120px; */
+
+}
+
 .hero-btn {
+    background-color: var(--background-black);
     font-size: 16px;
     line-height: 1.88;
     background-color: var(--accent-color);
     color: var(--main-white-color);
     border: none;
+    padding: 10px 20px;
+    align-self: center;
+    margin-bottom: 200px;
 }
 
 .hero-title {
@@ -129,14 +216,26 @@ body {
 }
 
         /* ADVANTAGES */
-
+.hero-adv{
+    background-color: var(--main-white-color);
+    padding: 94px 200px 0 200px;
+    /* display: flex;
+    justify-content: space-between; */
+}
 .advantages-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--main-black-color);
+    padding-bottom: 9.41px;
 }
 
+.advantages-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
 .advantages-item {
     font-size: 14px;
     line-height: var(--text-lh);
@@ -145,12 +244,31 @@ body {
 }
 
         /* DEMO */
-
+.demo-container {
+    padding: 100px 200px 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
 .demo-title {
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--main-black-color);
+    align-self: center;
+}
+
+.demo-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 30px;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 94px;
+    /* margin: 0; */
+
 }
 
 /* .demo-img {} */
@@ -160,11 +278,37 @@ body {
 .team {
     background-color: var(--background-secondary);
 }
+
+.team-container {
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 94px;
+}
+
 .team-title {
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--main-black-color);
+    padding-top: 94px;
+    align-self: center;
+}
+
+.team-list {
+    display: flex;
+    padding-top: 50px;
+    /* justify-content: space-between; */
+    gap: 30px;
+}
+
+.team-item {
+    background-color: var(--main-white-color);
+    padding-bottom: 30px;
+
+}
+.team-link {
+    text-align: center;
 }
 
 .team-name {
@@ -173,6 +317,7 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--main-black-color);
+    padding-top: 30px;
 }
 
 .team-job {
@@ -180,10 +325,28 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    padding-top: 10px;
 }
 
 
+/* 
+------------------------
+PORTFOLIO
+------------------------ 
+*/
+
+.products-container {
+    /* background-color: var(--background-primary); */
+    padding: 94px 215px;
+}
+
         /* FILTERS */
+
+.filters-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
 
 .filters-btn {
     font-weight: 500;
@@ -193,7 +356,35 @@ body {
     color: var(--main-black-color);
     background-color: var(--background-secondary);
     border: none;
+    /* padding: 6px 24px; */
+    /* Тут питання. На кожній з кнопок у даному випадку разні відступи з боків. 
+    Тут є якийсь принцив побудови і треба довчити механізм чи це забаганка дизайнера
+    і треба просто прописати, як в макеті?  
+    
+    Або ж це не маржини, а довільна ширина кнопок, а текст по центру стоїть*/
 }
+
+.filters-list > :nth-child(1) > :first-child {
+    padding: 6px 26px;
+}
+
+.filters-list> :nth-child(2)> :first-child {
+    padding: 6px 26px;
+}
+
+.filters-list> :nth-child(3)> :first-child {
+    padding: 6px 53px;
+}
+
+.filters-list> :nth-child(4)> :first-child {
+    padding: 6px 25px;
+}
+
+.filters-list> :nth-child(5)> :first-child {
+    padding: 6px 26px;
+}
+
+/* Так само замість маржинів можна задати ширину і центрувати текст. */
 
 .filters-btn:hover {
     background-color: var(--accent-color);
@@ -204,12 +395,22 @@ body {
 
         /* EXAMPLES */
 
+.examples-list {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
 .examples-name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--main-black-color);
+    padding-top: 20px;
+    padding-left: 24px;
 }
 
 .examples-type {
@@ -217,6 +418,8 @@ body {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    padding-top: 4px;
+    padding-left: 24px;
 }
 
         /* FOOTER */
@@ -225,9 +428,30 @@ body {
     background-color: var(--background-black);
 }
 
+.footer-container {
+    padding: 0 215px 60px 215px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    padding-top: 60px;
+    padding-bottom: 9px;
+}
+
 .footer-address {
+    display: flex;
+    flex-direction: column;
     font-style: normal;
     color: var(--main-white-color);
+}
+
+.footer-address > address {
+    font-family: 'Roboto';
+        font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .footer-email {
