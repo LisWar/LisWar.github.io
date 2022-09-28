@@ -203,7 +203,7 @@ body {
     background-color: var(--accent-color);
     color: var(--main-white-color);
     border: none;
-    padding: 10px 20px;
+    padding: 30px 20px 10px 20 px;
     align-self: center;
     margin-bottom: 200px;
 }
