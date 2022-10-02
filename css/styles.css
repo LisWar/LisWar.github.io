@@ -98,7 +98,9 @@ body {
 }
 
 .container {
-    margin: 0 215px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
     
             /* HEADER */
@@ -111,8 +113,9 @@ body {
 .header-container {
     display: flex;
     align-items: center;
-    margin-top: 24px;
-    margin-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-nav {
@@ -121,7 +124,7 @@ body {
 }
 
 .header-logo {
-    margin-right: 97px;
+    padding-right: 97px;
 }
 
 .header-list {
@@ -155,7 +158,7 @@ body {
 }
 
 .header-tel {
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
 .header-link:hover, .header-email:hover, .header-tel:hover {
@@ -169,19 +172,19 @@ body {
     background-color: var(--background-black);
 }
 
-.hero-proper{
+/* .hero-proper{
     
     display: flex;
     flex-direction: column;
     padding: 200px 200px 0 200px;
     margin: auto;
     justify-content: center;
-    /* align-content: center; */
-}
+    align-content: center; 
+} */
 
 .hero-container {
     display: flex;
-    padding: 0 200px;
+    padding: 200px 0;
     margin: auto;
     flex-direction: column;
     align-content: center;
@@ -189,11 +192,10 @@ body {
 
 .hero-title {
     background-color: var(--background-black);
-    /* justify-self: center; */
-    padding: 0 200px;
-    /* width: 700px; */
-    /* min-height: 120px; */
-
+    text-align: center;
+    max-width: 696px;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .hero-btn {
@@ -205,8 +207,6 @@ body {
     border: none;
     padding: 10px 20px;
     align-self: center;
-    margin-top: 30px;
-    margin-bottom: 200px;
 }
 
 .hero-title {
@@ -217,11 +217,8 @@ body {
 }
 
         /* ADVANTAGES */
-.hero-adv{
-    background-color: var(--main-white-color);
-    padding: 94px 200px 0 200px;
-    /* display: flex;
-    justify-content: space-between; */
+.advantages-container {
+    padding-top: 94px;
 }
 .advantages-title {
     font-size: 14px;
@@ -246,11 +243,10 @@ body {
 
         /* DEMO */
 .demo-container {
-    padding: 100px 200px 0 200px;
+    padding-top: 100px;
+    padding-bottom: 94px;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
 }
 .demo-title {
     font-size: 36px;
@@ -265,9 +261,8 @@ body {
     flex-wrap: wrap;
 
     gap: 30px;
-    padding: 0;
     padding-top: 50px;
-    padding-bottom: 94px;
+    /*padding-bottom: 94px; */
     /* margin: 0; */
 
 }
@@ -281,7 +276,8 @@ body {
 }
 
 .team-container {
-    padding: 0 200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     display: flex;
     flex-direction: column;
     padding-bottom: 94px;
@@ -292,8 +288,7 @@ body {
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--main-black-color);
-    padding-top: 94px;
-    align-self: center;
+    text-align: center;
 }
 
 .team-list {
@@ -336,11 +331,6 @@ PORTFOLIO
 ------------------------ 
 */
 
-.products-container {
-    /* background-color: var(--background-primary); */
-    padding: 94px 215px;
-}
-
         /* FILTERS */
 
 .filters-list {
@@ -357,12 +347,6 @@ PORTFOLIO
     color: var(--main-black-color);
     background-color: var(--background-secondary);
     border: none;
-    /* padding: 6px 24px; */
-    /* Тут питання. На кожній з кнопок у даному випадку разні відступи з боків. 
-    Тут є якийсь принцив побудови і треба довчити механізм чи це забаганка дизайнера
-    і треба просто прописати, як в макеті?  
-    
-    Або ж це не маржини, а довільна ширина кнопок, а текст по центру стоїть*/
 }
 
 .filters-list > :nth-child(1) > :first-child {
@@ -395,23 +379,33 @@ PORTFOLIO
 
 
         /* EXAMPLES */
+.examples-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
 
 .examples-list {
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    
+
 }
 
+.examples-item {
+    border: 1px solid #EEEEEE;
+}
+
+.examples-text{
+    padding: 20px 24px;
+}
 .examples-name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--main-black-color);
-    padding-top: 20px;
-    padding-left: 24px;
 }
 
 .examples-type {
@@ -420,7 +414,6 @@ PORTFOLIO
     letter-spacing: 0.03em;
     color: var(--text-color);
     padding-top: 4px;
-    padding-left: 24px;
 }
 
         /* FOOTER */
@@ -430,13 +423,14 @@ PORTFOLIO
 }
 
 .footer-container {
-    padding: 0 215px 60px 215px;
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
-    padding-top: 60px;
+    
     padding-bottom: 9px;
 }
 
@@ -445,14 +439,16 @@ PORTFOLIO
     flex-direction: column;
     font-style: normal;
     color: var(--main-white-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .footer-address > address {
     font-family: 'Roboto';
-        font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    font-style: normal;
 }
 
 .footer-email {
