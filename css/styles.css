@@ -88,6 +88,7 @@ body {
     letter-spacing: 0.06em;
 } */
 
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-size: 26px;
@@ -108,6 +109,7 @@ body {
 
 .header {
     background-color: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -115,7 +117,7 @@ body {
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
+
 }
 
 .header-nav {
@@ -395,6 +397,8 @@ PORTFOLIO
 
 .examples-item {
     border: 1px solid #EEEEEE;
+    /* padding: -1px; */
+    margin: -1px;
 }
 
 .examples-text{
