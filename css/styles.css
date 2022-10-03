@@ -131,7 +131,7 @@ body {
 
 .header-list {
     display: flex;
-    gap: 30px; 
+    gap: 50px; 
 }
 
 .header-contacts {
@@ -235,18 +235,24 @@ body {
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
+   
 }
 .advantages-item {
     font-size: 14px;
     line-height: var(--text-lh);
     letter-spacing: 0.03em;
     color: var(--text-color);
+    max-width: 270px;
 }
 
         /* DEMO */
-.demo-container {
-    padding-top: 100px;
+.demo {
+    padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.demo-container {
+
     display: flex;
     flex-direction: column;
 }
@@ -261,9 +267,8 @@ body {
 .demo-list {
     display: flex;
     flex-wrap: wrap;
-
     gap: 30px;
-    padding-top: 50px;
+    margin-top: 50px;
     /*padding-bottom: 94px; */
     /* margin: 0; */
 
@@ -275,11 +280,12 @@ body {
         /* TEAM */
 .team {
     background-color: var(--background-secondary);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
     display: flex;
     flex-direction: column;
     padding-bottom: 94px;
@@ -295,8 +301,7 @@ body {
 
 .team-list {
     display: flex;
-    padding-top: 50px;
-    /* justify-content: space-between; */
+    margin-top: 50px;
     gap: 30px;
 }
 
@@ -371,8 +376,6 @@ PORTFOLIO
     padding: 6px 26px;
 }
 
-/* Так само замість маржинів можна задати ширину і центрувати текст. */
-
 .filters-btn:hover {
     background-color: var(--accent-color);
     color: var(--main-white-color);
@@ -381,28 +384,36 @@ PORTFOLIO
 
 
         /* EXAMPLES */
-.examples-container {
+.examples {
     padding-top: 94px;
     padding-bottom: 94px;
-
 }
 
+/* .examples-container {
+} */
+
 .examples-list {
-    padding-top: 50px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 
 }
 
+
+
 .examples-item {
-    border: 1px solid #EEEEEE;
     /* padding: -1px; */
-    margin: -1px;
+    max-width: calc((100%-60)/3);
+}
+
+.examples-img {
+    display:block;
 }
 
 .examples-text{
     padding: 20px 24px;
+        border: 1px solid #EEEEEE;
 }
 .examples-name {
     font-weight: 700;
@@ -424,17 +435,16 @@ PORTFOLIO
 
 .footer {
     background-color: var(--background-black);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .footer-logo {
-    
     padding-bottom: 9px;
 }
 
