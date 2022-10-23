@@ -21,19 +21,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+      <header class="header">
         <div class="header-container container">
         <nav class="header-nav">
           <a class="header-logo logo link" href="./index.html">WebStudio</a>
 
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link link" href="./index.html"
+              <a class="header-link header-current link" href="./index.html"
                 >Studio</a
               >
             </li>
             <li class="header-item">
-              <a class="header-link header-current link" href="./portfolio.html">Portfolio</a>
+              <a class="header-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-item">
               <a class="header-link link" href="">Contacts</a>
@@ -43,11 +43,15 @@
 
         <div class="header-contacts">
           <a class="header-email email link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+            ><svg class="header-icon">
+              <use href="./images/sprite.svg#icon-mini_envelope"></use>
+            </svg>info@devstudio.com</a
           >
 
           <a class="header-tel tel link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
+            ><svg class="header-icon">
+              <use href="./images/sprite.svg#icon-mini_smartphone"></use>
+            </svg>+38 096 111 11 11</a
           >
         </div>
       </header>
@@ -212,23 +216,42 @@
       </section>
     </main>
 
-    <footer class="footer">
+      <footer class="footer">
         <div class="footer-container container">
-        <a class="footer-logo logo link" href="./index.html">WebStudio</a>
-        <address class="footer-address">
-          <p class="address">
-            695 Park Ave, New York, NY 10065,<br />
-            United States
-          </p>
+          <section class="footer-contacts">
+            <a class="footer-logo logo link" href="./index.html">WebStudio</a>
+            <address class="footer-address">
+              <p class="address">
+                695 Park Ave, New York, NY 10065,<br />
+                United States
+              </p>
 
-          <a class="footer-email email link" href="mailto:info@example.com"
-            >info@example.com</a
-          >
+              <a class="footer-email email link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
 
-          <a class="footer-tel tel link" href="tel:+12127724150"
-            >+1 212-772-4150</a
-          >
-        </address>
+              <a class="footer-tel tel link" href="tel:+12127724150"
+                >+1 212-772-4150</a
+              >
+            </address>            
+          </section>
+          <section class="footer-soc">
+            <h3 class="footer-soc-title">FIND US ON</h3>
+            <ul class="footer-soc-list">
+                <li class="footer-soc-item"><a class="footer-soc-link" href=""><svg class="footer-soc-icon">
+                    <use href="./images/sprite.svg#icon-media_instagram"></use>
+                  </svg> </a></li>
+                <li class="footer-soc-item"><a class="footer-soc-link" href=""><svg class="footer-soc-icon">
+                    <use href="./images/sprite.svg#icon-media_twitter"></use>
+                  </svg> </a></li>
+                  <li class="footer-soc-item"><a class="footer-soc-link" href=""><svg class="footer-soc-icon">
+                    <use href="./images/sprite.svg#icon-media_facebook"></use>
+                  </svg> </a></li>
+                  <li class="footer-soc-item"><a class="footer-soc-link" href=""><svg class="footer-soc-icon">
+                    <use href="./images/sprite.svg#icon-media_linkedin"></use>
+                  </svg> </a></li>
+              </ul>
+          </section>
         </div>
       </footer>
   </body>

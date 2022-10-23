@@ -134,20 +134,25 @@ body {
     gap: 50px; 
 }
 
-.header-contacts {
-    margin-left: auto;
-}
-
 .header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-black-color);
+
 }
 
 .header-current {
     color: var(--accent-color);
+}
+
+.header-contacts {
+    margin-left: auto;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .header-email, .header-tel{
@@ -157,6 +162,22 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    align-self: center;
+}
+
+.header-icon{
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.header-email>.header-icon {
+    width: 16px;
+    height: 12px;
+}
+
+.header-tel > .header-icon{
+    width: 10px;
+    height: 16px;
 }
 
 .header-tel {
@@ -172,17 +193,12 @@ body {
         /* HERO */
 .hero {
     background-color: var(--background-black);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero_background.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
 }
-
-/* .hero-proper{
-    
-    display: flex;
-    flex-direction: column;
-    padding: 200px 200px 0 200px;
-    margin: auto;
-    justify-content: center;
-    align-content: center; 
-} */
 
 .hero-container {
     display: flex;
@@ -193,7 +209,6 @@ body {
 }
 
 .hero-title {
-    background-color: var(--background-black);
     text-align: center;
     max-width: 696px;
     margin: 0 auto;
@@ -209,6 +224,8 @@ body {
     border: none;
     padding: 10px 20px;
     align-self: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
 }
 
 .hero-title {
@@ -219,7 +236,7 @@ body {
 }
 
         /* ADVANTAGES */
-.advantages-container {
+.advantages {
     padding-top: 94px;
 }
 .advantages-title {
@@ -243,8 +260,22 @@ body {
     letter-spacing: 0.03em;
     color: var(--text-color);
     max-width: 270px;
+    display: flex;
+    flex-direction: column;
 }
 
+.advantages-icon{
+    background: #F5F4FA;
+        border-radius: 4px;
+        padding: 25px 0;
+        margin-bottom: 30px;
+        width: 270px;
+        height: 120px;
+}
+
+.advantages-icon > use{
+            height: 70px;
+}
         /* DEMO */
 .demo {
     padding-top: 94px;
@@ -288,7 +319,6 @@ body {
 
     display: flex;
     flex-direction: column;
-    padding-bottom: 94px;
 }
 
 .team-title {
@@ -308,6 +338,8 @@ body {
 .team-item {
     background-color: var(--main-white-color);
     padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 
 }
 .team-link {
@@ -329,6 +361,89 @@ body {
     letter-spacing: 0.03em;
     color: var(--text-color);
     padding-top: 10px;
+}
+
+.team-media{
+    margin: 16px 32px 0 32px;
+    display: flex;
+    gap: 10px;
+        align-items: center;
+        justify-content: center;
+}
+
+.team-media-item{
+    border-radius: 50%;
+}
+
+.team-media-link{
+    /* border-radius: 50%; */
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-media-item:hover, .team-media-item:focus{
+    background-color: var(--accent-color);
+    fill: var(--main-white-color);
+}
+
+.team-media-item:hover .team-media-icon,
+.team-media-item:focus .team-media-icon{
+    fill: var(--main-white-color);
+}
+
+.team-media-icon{
+    width: 20px;
+    height: 20px;
+    fill:currentColor;
+    color: #AFB1B8;
+}
+
+        /* CUSTOMERS */
+
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers-title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--main-black-color);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    /* border: 3px black; */
+}
+
+.customers-item {
+    padding: 16px 32px;
+    justify-content: end;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+
+.customers-item:hover {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+    cursor: pointer;
+}
+
+.customers-logo-item {
+    max-width: 106px;
+    max-height: 60px;
 }
 
 
@@ -389,9 +504,6 @@ PORTFOLIO
     padding-bottom: 94px;
 }
 
-/* .examples-container {
-} */
-
 .examples-list {
     margin-top: 50px;
     display: flex;
@@ -400,12 +512,13 @@ PORTFOLIO
 
 }
 
-
-
 .examples-item {
-    /* padding: -1px; */
     max-width: calc((100%-60)/3);
-}
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        /* !!!
+        Border збиває сітку прикладів, змінами формули calc це не виправляється
+        border: 1px solid #EEEEEE; */
+    }
 
 .examples-img {
     display:block;
@@ -431,6 +544,7 @@ PORTFOLIO
     padding-top: 4px;
 }
 
+
         /* FOOTER */
 
 .footer {
@@ -441,7 +555,13 @@ PORTFOLIO
 
 .footer-container {
     display: flex;
+}
+
+.footer-contacts{
+    display: flex;
     flex-direction: column;
+    margin-right: 70px;
+    flex-shrink: 0;
 }
 
 .footer-logo {
@@ -473,4 +593,46 @@ PORTFOLIO
 .footer-tel {
     color: var(--main-white-color);
     opacity: 60%;
+}
+
+.footer-soc{
+    margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+}
+
+.footer-soc-title{
+    font-size: 14px;
+    font-weight: normal;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+}
+
+.footer-soc-list{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-soc-item{
+    width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.footer-soc-item:hover, .footer-soc-item:focus{
+    background:var(--accent-color);
+}
+
+.footer-soc-icon{
+        width: 20px;
+            height: 20px;
+            fill: #FFFFFF;
 }
