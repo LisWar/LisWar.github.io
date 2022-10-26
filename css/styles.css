@@ -126,7 +126,7 @@ body {
 }
 
 .header-logo {
-    padding-right: 97px;
+    margin-right: 97px;
 }
 
 .header-list {
@@ -140,7 +140,6 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-black-color);
-
 }
 
 .header-current {
@@ -162,7 +161,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    align-self: center;
+    display: flex;
+    align-items: center;
 }
 
 .header-icon{
@@ -181,10 +181,11 @@ body {
 }
 
 .header-tel {
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
-.header-link:hover, .header-email:hover, .header-tel:hover {
+.header-link:hover, .header-email:hover, .header-tel:hover,
+.header-link:focus, .header-email:focus, .header-tel:focus {
      color: var(--accent-color);
      cursor: pointer;
  }
@@ -316,7 +317,6 @@ body {
 }
 
 .team-container {
-
     display: flex;
     flex-direction: column;
 }
@@ -337,7 +337,7 @@ body {
 
 .team-item {
     background-color: var(--main-white-color);
-    padding-bottom: 30px;
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 
@@ -367,8 +367,9 @@ body {
     margin: 16px 32px 0 32px;
     display: flex;
     gap: 10px;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
 }
 
 .team-media-item{
@@ -391,6 +392,7 @@ body {
 
 .team-media-item:hover .team-media-icon,
 .team-media-item:focus .team-media-icon{
+        /* background-color: var(--accent-color); */
     fill: var(--main-white-color);
 }
 
@@ -425,9 +427,10 @@ body {
     /* border: 3px black; */
 }
 
-.customers-item {
-    padding: 16px 32px;
-    justify-content: end;
+.customers-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -435,7 +438,7 @@ body {
     fill: #AFB1B8;
 }
 
-.customers-item:hover {
+.customers-link:hover, .customers-link:focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
     cursor: pointer;
@@ -514,11 +517,14 @@ PORTFOLIO
 
 .examples-item {
     max-width: calc((100%-60)/3);
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         /* !!!
         Border збиває сітку прикладів, змінами формули calc це не виправляється
         border: 1px solid #EEEEEE; */
-    }
+}
+
+.examples-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .examples-img {
     display:block;
@@ -628,7 +634,7 @@ PORTFOLIO
 }
 
 .footer-soc-item:hover, .footer-soc-item:focus{
-    background:var(--accent-color);
+    background-color:var(--accent-color);
 }
 
 .footer-soc-icon{
