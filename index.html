@@ -351,7 +351,7 @@
             </address>            
           </section>
           <section class="footer-soc">
-            <h3 class="footer-soc-title">FIND US ON</h3>
+            <h3 class="footer-soc-title footer-title">FIND US ON</h3>
             <ul class="footer-soc-list">
                 <li class="footer-soc-item"><a class="footer-soc-link" href=""><svg class="footer-soc-icon">
                     <use href="./images/sprite.svg#icon-media_instagram"></use>
@@ -367,34 +367,90 @@
                   </svg> </a></li>
               </ul>
           </section>
+          <section class="footer-sub">
+            <p class="footer-call footer-title">Subscribe to the newsletter</p>
+            <div class="footer-form-wrapper">
+              <form class="footer-form">
+                <label for="email-sub"></label>
+                <input type="email" name="email-sub" id="email-sub" placeholder="E-mail" class="footer-form-email"/>
+                <button type="submit" class="footer-btn btn">Suscribe <svg width="24" height="24" class="footer-icon"><use href="./images/sprite.svg#icon-send"></use></svg></button>
+              </form>
+            </div>
+          </section>
         </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop " data-modal> -->
+
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-close-icon" width="11px" height="11px">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <div class="modal-main" role="">
+          <p class="modal-title">Leave your information and we'll call you back</p>
+
+          <form class="modal-form">
+
+            <div class="modal-form-wrapper">
+            <label for="name-modal" class="modal-label">
+              <span class="modal-label-text">Name</span>
+              <span class="input-wrap">
+                <input type="text" name="name-modal" id="name-modal" class="modal-input" autocomplete="off"></input>
+                <svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-person-modal"></use>
+                </svg>
+              </span>
+            </label>
+            </div>
+           <div class="modal-form-wrapper">
+            <label for="tel-modal" class="modal-label">
+              <span class="modal-label-text">Telephone</span>
+              <span class="input-wrap">
+                <input type="tel" name="tel-modal" id="tel-modal" class="modal-input" autocomplete="off"></input>
+                <svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-phone-modal"></use>
+                </svg>
+              </span>
+            </label>
+           </div>
+            <div class="modal-form-wrapper">
+            <label for="email-modal" class="modal-label">
+              <span class="modal-label-text">E-mail</span>
+              <span class="input-wrap">
+                <input type="email" name="email-modal" id="email-modal" class="modal-input" autocomplete="off"></input>
+                <svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-email-modal"></use>
+                </svg>
+              </span>
+            </label>
+            </div>
+
+            <div class="modal-form-wrapper"> 
+              <label for="comment" class="modal-label">Comments</label>
+              <textarea name="comment" id="comment" class="modal-input modal-comment" placeholder="Enter the text"></textarea>
+            </div>
+
+            <div class="modal-form-wrapper modal-terms">
+                <input type="checkbox" class="input-check visually-hidden" name="terms" value="true" id="terms" required/>
+                <label for="terms" class="check-text">
+                  <span>
+                    <svg class="check-icon" width="16" height="15">
+                      <use href="./images/sprite.svg#icon-checkmark"></use>
+                    </svg>
+                  </span>
+                  I agree with the newsletter and accept the Terms and Conditions</label>
+            </div>
+            
+            <button type="submit" class="modal-submit-btn btn">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
     
     <script src="./script/modal.js"></script>
-    <!-- <script>(() => {
-      const refs = {
-        openModalBtn: document.querySelector("[data-modal-open]"),
-        closeModalBtn: document.querySelector("[data-modal-close]"),
-        modal: document.querySelector("[data-modal]"),
-      };
-    
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-    
-      function toggleModal() {
-        refs.modal.classList.toggle("is-hidden");
-      }
-    })();
-    </script> -->
+
   </body>
 </html>
