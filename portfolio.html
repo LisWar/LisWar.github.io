@@ -18,218 +18,219 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
-      <header class="header">
-        <div class="header-container container">
-        <nav class="header-nav">
-          <a class="header-logo logo link" href="./index.html">WebStudio</a>
+    <header class="header">
+      <div class="header__container container">
+      <nav class="header__nav">
+        <a class="header__logo logo link" href="./index.html">WebStudio</a>
 
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-link link" href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li class="header-item">
-              <a class="header-link header-current link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="header__list list">
+          <li class="header__item">
+            <a class="header__link link" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link--current link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="header-contacts">
-          <a class="header-email email link" href="mailto:info@devstudio.com"
-            ><svg class="header-icon">
-              <use href="./images/sprite.svg#icon-mini_envelope"></use>
-            </svg>info@devstudio.com</a
-          >
+      <div class="header__contacts">
+        <a class="header__email link" href="mailto:info@devstudio.com"
+          ><svg class="header__icon">
+            <use href="./images/sprite.svg#icon-mini_envelope"></use>
+          </svg>info@devstudio.com</a
+        >
 
-          <a class="header-tel tel link" href="tel:+380961111111"
-            ><svg class="header-icon">
-              <use href="./images/sprite.svg#icon-mini_smartphone"></use>
-            </svg>+38 096 111 11 11</a
-          >
-        </div>
-      </header>
+        <a class="header__tel link" href="tel:+380961111111"
+          ><svg class="header__icon">
+            <use href="./images/sprite.svg#icon-mini_smartphone"></use>
+          </svg>+38 096 111 11 11</a
+        >
+      </div>
+    </header>
 
     <main>
       <section class="examples">
-        <div class="examples-container container">
-          <div class="filters-container">
-          <h2 class="filters-title title visually-hidden">Filters</h2>
-          <ul class="filters-list list">
-            <li class="filters-item">
-              <button class="filters-btn btn" type="button">All</button>
+        <div class="examples__container container">
+          <div class="filters__container">
+          <h2 class="filters__title title visually-hidden">Filters</h2>
+          <ul class="list filters__list">
+            <li class="filters__item">
+              <button class="btn filters__btn" type="button">All</button>
             </li>
-            <li class="filters-item">
-              <button class="filters-btn btn" type="button">Web-sites</button>
+            <li class="filters__item">
+              <button class="btn filters__btn" type="button">Web-sites</button>
             </li>
-            <li class="filters-item">
-              <button class="filters-btn btn" type="button">Apps</button>
+            <li class="filters__item">
+              <button class="btn filters__btn" type="button">Apps</button>
             </li>
-            <li class="filters-item">
-              <button class="filters-btn btn" type="button">Design</button>
+            <li class="filters__item">
+              <button class="btn filters__btn" type="button">Design</button>
             </li>
-            <li class="filters-item">
-              <button class="filters-btn btn" type="button">Marketing</button>
+            <li class="filters__item">
+              <button class="btn filters__btn" type="button">Marketing</button>
             </li>
           </ul>
           </div>
 
-          <div class="list-container ">
-          <h2 class="examples-title title visually-hidden">Project examples</h2>
-          <ul class="examples-list list">
-            <li class="examples-item">
-              <a class="examples-link link" href="">
-                <div class="img-wrapper">
-                  <p class="img-overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+          <div class="product-grid">
+          <h2 class="cards__title title visually-hidden">Project examples</h2>
+          <ul class="cards__list list">
+            <li class="cards__item">
+              <a class="cards__link link" href="">
+                <div class="cards__wrapper">
+                  <p class="cards__overlay">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                 <img
-                  class="examples-img"
+                  class="cards__img"
                   src="./images/technoduck.jpg"
                   alt="Open laptop with photos of three people"
                   width="370"
                 />
                 </div>
-                <div class="examples-text">
-                <p class="examples-name">Technoduck</p>
-                <p class="examples-type">Web-site</p>
+                <div class="cards__text">
+                <p class="cards__name">Technoduck</p>
+                <p class="cards__type">Web-site</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="examples-link link" href="">
-                <div class="img-wrapper">
-                 <p class="img-overlay">New Orlean vs Golden Star is a state-of-the-art coronavirus distribution event. Companies use this sport event for athletic espionage and attacks on competitors' viewership.</p>
+            <li class="cards__item">
+              <a class="cards__link link" href="">
+                <div class="cards__wrapper">
+                 <p class="cards__overlay">New Orlean vs Golden Star is a state-of-the-art coronavirus distribution event. Companies use this sport event for athletic espionage and attacks on competitors' viewership.</p>
                 <img
-                  class="examples-img"
+                  class="cards__img"
                   src="./images/new_orlean.jpg"
                   alt="Two basketball players contest ball midjump"
                   width="370"
                 /></div>
-                <div class="examples-text">
-                <p class="examples-name">Poster New Orlean vs Golden Star</p>
-                <p class="examples-type">Design</p>
+                <div class="cards__text">
+                <p class="cards__name">Poster New Orlean vs Golden Star</p>
+                <p class="cards__type">Design</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="examples-link link" href="">
-                <div class="img-wrapper">
+            <li class="cards__item">
+              <a class="cards__link link" href="">
+                <div class="cards__wrapper">
                 <img
-                  class="examples-img"
+                  class="cards__img"
                   src="./images/seafood.jpg"
                   alt="The Seafood Restaurant logo"
                   width="370"
                 />
-                <p class="img-overlay">Seafood Restaurant is a state-of-the-art coronavirus distribution diner. Companies use this food chain for digital espionage and attacks on competitors' secure stomacks.</p>
+                <p class="cards__overlay">Seafood Restaurant is a state-of-the-art coronavirus distribution diner. Companies use this food chain for digital espionage and attacks on competitors' secure stomacks.</p>
                 </div>
-                <div class="examples-text">
-                <p class="examples-name">Seafood Restaurant</p>
-                <p class="examples-type">Apps</p>
+                <div class="cards__text">
+                <p class="cards__name">Seafood Restaurant</p>
+                <p class="cards__type">Apps</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="examples-link link" href="">
-                <div class="img-wrapper">
-                  <p class="img-overlay">Project Prime is a state-of-the-art coronavirus distribution tech startup. Companies use these headsets for acoustic espionage and attacks on competitors' secure ears.</p>
+            <li class="cards__item">
+              <a class="cards__link link" href="">
+                <div class="cards__wrapper">
+                  <p class="cards__overlay">Project Prime is a state-of-the-art coronavirus distribution tech startup. Companies use these headsets for acoustic espionage and attacks on competitors' secure ears.</p>
                   <img
-                    class="examples-img"
+                    class="cards__img"
                     src="./images/project_prime.jpg"
                     alt="Photo of headphones"
                     width="370"
                   />
                 </div>
-                <div class="examples-text">
-                <p class="examples-name">Project Prime</p>
-                <p class="examples-type">Marketing</p>
+                <div class="cards__text">
+                <p class="cards__name">Project Prime</p>
+                <p class="cards__type">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="examples-link link" href="">
-                <div class="img-wrapper">
-                  <p class="img-overlay">Project Boxes is a state-of-the-art coronavirus distribution storage center. Companies use these containers for physical espionage and attacks on competitors' secure warehouses.</p>
+            <li class="cards__item">
+              <a class="cards__link link" href="">
+                <div class="cards__wrapper">
+                  <p class="cards__overlay">Project Boxes is a state-of-the-art coronavirus distribution storage center. Companies use these containers for physical espionage and attacks on competitors' secure warehouses.</p>
                 <img
-                  class="examples-img"
+                  class="cards__img"
                   src="./images/boxes.jpg"
                   alt="Two box mockups with text, large white one and smaller brown"
                   width="370"
                 />
               </div>
-                <div class="examples-text">
-                <p class="examples-name">Project Boxes</p>
-                <p class="examples-type">Apps</p>
+                <div class="cards__text">
+                <p class="cards__name">Project Boxes</p>
+                <p class="cards__type">Apps</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="examples-link link" href="">
-                <div class="img-wrapper">
-                  <p class="img-overlay">Inspiration has no Borders is a state-of-the-art coronavirus distribution initiative. Companies use this legislature for international espionage and attacks on competitors' secure borders.</p>
+            <li class="cards__item">
+              <a class="cards__link link" href="">
+                <div class="cards__wrapper">
+                  <p class="cards__overlay">Inspiration has no Borders is a state-of-the-art coronavirus distribution initiative. Companies use this legislature for international espionage and attacks on competitors' secure borders.</p>
                 <img
-                  class="examples-img"
+                  class="cards__img"
                   src="./images/borderless.jpg"
                   alt="Mac screen with Inspiration has no borders homepage"
                   width="370"
                 />
                 </div>
-                <div class="examples-text">
-                <p class="examples-name">Inspiration has no Borders</p>
-                <p class="examples-type">Web-site</p>
+                <div class="cards__text">
+                <p class="cards__name">Inspiration has no Borders</p>
+                <p class="cards__type">Web-site</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="examples-link link" href="">
-                <div class="img-wrapper">
-                  <p class="img-overlay">Limited Edition is a state-of-the-art coronavirus distribution lootbox company. Companies use this seller for weekly espionage and attacks on competitors' not secure wallets.</p>
-                  <img class="examples-img"
+            <li class="cards__item">
+              <a class="cards__link link" href="">
+                <div class="cards__wrapper">
+                  <p class="cards__overlay">Limited Edition is a state-of-the-art coronavirus distribution lootbox company. Companies use this seller for weekly espionage and attacks on competitors' not secure wallets.</p>
+                  <img class="cards__img"
                   src="./images/limited_edition.jpg"
                   alt="Open book with pictures of people"
                   width="370"
                 /></div>
-                <div class="examples-text">
-                <p class="examples-name">Limited Edition</p>
-                <p class="examples-type">Design</p>
+                <div class="cards__text">
+                <p class="cards__name">Limited Edition</p>
+                <p class="cards__type">Design</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <div class="img-wrapper">
-                <p class="img-overlay">Project LAB is a state-of-the-art coronavirus distribution lab. Companies use this compounds for digital espionage and <b>[REDACTED]</b>.</p>
-              <a class="examples-link link" href="">
+            <li class="cards__item">
+              <div class="cards__wrapper">
+                <p class="cards__overlay">Project LAB is a state-of-the-art coronavirus distribution lab. Companies use this compounds for digital espionage and <b>[REDACTED]</b>.</p>
+              <a class="cards__link link" href="">
                 <img
-                  class="examples-img"
+                  class="cards__img"
                   src="./images/project_lab.jpg"
                   alt="Tag with text LABEL TAG"
                   width="370"
                 />
               </div>
-                <div class="examples-text">
-                <p class="examples-name">Project LAB</p>
-                <p class="examples-type">Marketing</p>
+                <div class="cards__text">
+                <p class="cards__name">Project LAB</p>
+                <p class="cards__type">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="examples-item">
-              <a class="examples-link link" href="">
-                <div class="img-wrapper">
-                  <p class="img-overlay">Growing Business is a state-of-the-art coronavirus distribution Business. Companies use this Business for digital espionage and attacks on competitors' Businesses.</p>
+            <li class="cards__item">
+              <a class="cards__link link" href="">
+                <div class="cards__wrapper">
+                  <p class="cards__overlay">Growing Business is a state-of-the-art coronavirus distribution Business. Companies use this Business for digital espionage and attacks on competitors' Businesses.</p>
                 <img
-                  class="examples-img"
+                  class="cards__img"
                   src="./images/growing_business.jpg"
                   alt="Person works on a laptop with Growing Business homepage"
                   width="370"
                 />
               </div>
-                <div class="examples-text">
-                <p class="examples-name">Growing Business</p>
-                <p class="examples-type">Apps</p>
+                <div class="cards__text">
+                <p class="cards__name">Growing Business</p>
+                <p class="cards__type">Apps</p>
               </div>
               </a>
             </li>
@@ -240,43 +241,54 @@
       </section>
     </main>
 
-      <footer class="footer">
-        <div class="footer-container container">
-          <section class="footer-contacts">
-            <a class="footer-logo logo link" href="./index.html">WebStudio</a>
-            <address class="footer-address">
+    <footer class="footer">
+        <div class="footer__container container">
+          <section class="footer__contacts">
+            <a class="logo footer__logo link" href="./index.html">WebStudio</a>
+            <address class="footer__address">
               <p class="address">
                 695 Park Ave, New York, NY 10065,<br />
                 United States
               </p>
 
-              <a class="footer-email email link" href="mailto:info@example.com"
+              <a class="footer__email email link" href="mailto:info@example.com"
                 >info@example.com</a
               >
 
-              <a class="footer-tel tel link" href="tel:+12127724150"
+              <a class="footer__tel tel link" href="tel:+12127724150"
                 >+1 212-772-4150</a
               >
             </address>            
           </section>
-          <section class="footer-soc">
-            <h3 class="footer-soc-title">FIND US ON</h3>
-            <ul class="footer-soc-list">
-                <li class="footer-soc-item"><a class="footer-soc-link" href=""><svg class="footer-soc-icon">
+          <section class="footer__soc">
+            <h3 class="footer__title">FIND US ON</h3>
+            <ul class="footer__list">
+
+                <li class="footer__media"><a class="soc-link soc-link--footer" href=""><svg class="soc-link__icon soc-link__icon--footer">
                     <use href="./images/sprite.svg#icon-media_instagram"></use>
                   </svg> </a></li>
-                <li class="footer-soc-item"><a class="footer-soc-link" href=""><svg class="footer-soc-icon">
+                <li class="footer__media"><a class="soc-link soc-link--footer" href=""><svg class="soc-link__icon soc-link__icon--footer">
                     <use href="./images/sprite.svg#icon-media_twitter"></use>
                   </svg> </a></li>
-                  <li class="footer-soc-item"><a class="footer-soc-link" href=""><svg class="footer-soc-icon">
+                  <li class="footer__media"><a class="soc-link soc-link--footer" href=""><svg class="soc-link__icon soc-link__icon--footer">
                     <use href="./images/sprite.svg#icon-media_facebook"></use>
                   </svg> </a></li>
-                  <li class="footer-soc-item"><a class="footer-soc-link" href=""><svg class="footer-soc-icon">
+                  <li class="footer__media"><a class="soc-link soc-link--footer" href=""><svg class="soc-link__icon soc-link__icon--footer">
                     <use href="./images/sprite.svg#icon-media_linkedin"></use>
                   </svg> </a></li>
               </ul>
           </section>
+          <section class="footer__sub">
+            <p class="footer__title">Subscribe to the newsletter</p>
+            <div class="subscription">
+              <form class="subscription__form">
+                <label for="subscription__email"></label>
+                <input type="email" name="subscription__email" id="subscription__email" placeholder="E-mail" class="subscription__email" autocomplete="off"/>
+                <button type="submit" class="submit-btn btn">Suscribe <svg width="24" height="24" class="submit-btn__icon"><use href="./images/sprite.svg#icon-send"></use></svg></button>
+              </form>
+            </div>
+          </section>
         </div>
-      </footer>
+    </footer>
   </body>
 </html>

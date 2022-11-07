@@ -1,0 +1,38 @@
+@import '../../utils/vars';
+
+.personal-card {
+    background-color: $main-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.personal-card__link {
+    text-align: center;
+}
+
+.personal-card__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $main-black-color;
+    padding-top: 30px;
+}
+
+.personal-card__job {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $text-color;
+    padding-top: 10px;
+}
+
+.personal-card__media {
+    margin: 16px 32px 0 32px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}

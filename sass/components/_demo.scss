@@ -1,0 +1,54 @@
+@import '../utils/vars';
+.demo {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.demo__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.demo__title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $main-black-color;
+    align-self: center;
+}
+
+.demo__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.demo__wrapper {
+    position: relative;
+}
+
+.demo__img {
+    display: block;
+}
+
+.demo__text {
+    position: absolute;
+    bottom: 0;
+
+    height: 70px;
+    width: 100%;
+    padding-top: 27px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    background: rgba(47, 48, 58, 0.8);
+}

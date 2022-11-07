@@ -1,0 +1,54 @@
+@import '../utils/vars';
+
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers__title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $main-black-color;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.customers__list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.customers__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,&:focus{
+        border-color: $accent-color;
+        color: $accent-color;
+        cursor: pointer;
+    }
+}
+
+// .customers__link:hover,
+// .customers__link:focus {
+//     border-color: var(--accent-color);
+//     color: var(--accent-color);
+//     cursor: pointer;
+// }
+
+.customers__logo {
+    max-width: 106px;
+    max-height: 60px;
+}

@@ -1,0 +1,27 @@
+@import '../utils/vars';
+.icon-card__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $main-black-color;
+    padding-bottom: 9.41px;
+}
+
+.icon-card__item {
+    font-size: 14px;
+    line-height: $text-lh;
+    letter-spacing: 0.03em;
+    color: $text-color;
+    max-width: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-card__icon {
+    background: #F5F4FA;
+    border-radius: 4px;
+    padding: 25px 0;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+}
