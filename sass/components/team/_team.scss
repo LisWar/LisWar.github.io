@@ -1,25 +1,37 @@
 @import '../../utils/vars';
 .team {
     background-color: $background-secondary;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .team__container {
-    display: flex;
-    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width:1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }
 
 .team__title {
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: $main-black-color;
+        color: $main-black-color;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;    
     text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+       
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+            line-height: 1.16;
+        }
 }
 
 .team__list {
-    display: flex;
-    margin-top: 50px;
-    gap: 30px;
+        @media screen and (min-width:768px) {
+                display: flex;
+                flex-wrap: wrap;
+                    justify-content: space-between;
+            }
+
 }

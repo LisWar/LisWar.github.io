@@ -9,8 +9,9 @@
 
     background-color: $main-white-color;
 
-    width: 528px;
-    height: 581px;
+    width:90%;
+    max-width: 450px;
+    min-height:70%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 4px;
@@ -22,9 +23,9 @@
     }
 }
 
-// .backdrop.is-hidden .modal {
-//     transform: translate(-50%, -50%) scale(50%);
-// }
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(50%);
+}
 
 .modal__btn {
     position: absolute;
@@ -141,6 +142,7 @@
     resize: none;
     padding: 10px;
     margin-bottom: 20px;
+    
 
     &::placeholder {
             font-family: 'Roboto';
@@ -154,16 +156,6 @@
         }
 }
 
-// .modal__comment::placeholder {
-//     font-family: 'Roboto';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 1.15;
-//     letter-spacing: 0.01em;
-
-//     color: rgba(117, 117, 117, 0.5);
-// }
 
 .modal__terms {
     margin: 10px;
