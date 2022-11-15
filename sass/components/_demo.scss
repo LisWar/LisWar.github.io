@@ -18,13 +18,13 @@
     letter-spacing: 0.03em;
     color: $main-black-color;
     align-self: center;
+    margin-bottom: 50px;
 }
 
 .demo__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 50px;
 }
 
 .demo__wrapper {

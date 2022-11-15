@@ -11,15 +11,19 @@
 }
 
 .customers__title {
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
     color: $main-black-color;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;
     text-align: center;
-    padding-bottom: 30px;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+
     @media screen and (min-width:1200px) {
-            padding-bottom: 50px;
-        }
+        font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+    }
 }
 
 .customers__list {
@@ -31,13 +35,15 @@
 }
 
 .customers__item {
-    width: calc((100%/2) - 15px*4);
+    // width: calc((100%/2) - 15px*4);
+    width: 210px;
     min-width: 110px;
     min-height: 92px;
     box-sizing: border-box;
 
     @media screen and (min-width:768px) {
-            width: calc((100%/3) - 20px);
+            // width: calc((100%/3) - 20px);
+            width: 226px;
         }
 
     @media screen and (min-width:1200px) {
