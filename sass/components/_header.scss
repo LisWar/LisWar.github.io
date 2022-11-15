@@ -247,7 +247,9 @@
         content: '';
 
         position: absolute;
-        bottom: 4px;
+        @media screen and (min-width: 1999px) {
+            bottom: 4px;
+        }
         left: 0;
 
         height: 4px;
