@@ -312,6 +312,7 @@ body {
 }
 .header__link--current::after {
   content: "";
+  bottom: 0;
   position: absolute;
   bottom: 5px;
   left: 0;
